@@ -1,4 +1,5 @@
-const express = require(express);
+const express = require("express");
+const links = require("./links");
 const router = express.Router();
 
 const messages = [
@@ -14,5 +15,8 @@ const messages = [
     },
 ];
 
+router.get("/", (req, res) => {
+    res.render("index", { links: links });
+});
 
 module.exports = router;

@@ -1,0 +1,10 @@
+<p>No gen AI was used in the making of this page.</p>
+<ul class="link-area">
+    <% links.map((link) => { %>
+        <li class="link-item">
+            <a href="<%= link.href %>" target="_blank" rel="noopener noreferrer">
+                <%= link.name %>
+            </a>
+        </li>
+    <% }); %>
+</ul>
