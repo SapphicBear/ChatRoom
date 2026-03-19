@@ -13,9 +13,18 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/new", newRouter);
 
+// TODO: add 404 view
+app.use((req, res, next) => {
+    res.status(404).send("<p>404 page not found! Sorry!</p>");
+})
+app.use((err, req, res, next) => {
+    console.error(err);
+    res.status(err.statusCode || 500).send(err.message);
+});
+
 app.listen(3000, (err) => {
     if (err) {
         throw err;
     }
-    console.log(`Listening on port 3000`)
+    console.log(`Live on localhost:3000`)
 });
