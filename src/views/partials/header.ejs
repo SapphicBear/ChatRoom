@@ -1,10 +1,13 @@
 <nav class="navbar">
     <ul class="nav-list">
+        <% if (pages == "New") { %>
+            <li class="nav-item border button">
+            <a href="/" class="nav-link">Home</a>
+        </li>
+       <% } else { %>
         <li class="nav-item border button">
             <a href="/new" class="nav-link">New Message</a>
         </li>
-        <li class="nav-item border button">
-            <a href="/" class="nav-link">Home</a>
-        </li>
+       <% } %>
     </ul>
 </nav>

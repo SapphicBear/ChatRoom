@@ -105,10 +105,14 @@ header {
 
 main {
     display: grid;
+    align-content: start;
     grid-template-columns: repeat(fit-content, minmax(250px, 1fr));
     background-color: var(--background);
+    gap: 1rem 2rem;
+    overflow: auto;
 }
 .card {
+    min-height: fit-content;
     background: var(--text);
     padding: 1rem;
     color: var(--background);

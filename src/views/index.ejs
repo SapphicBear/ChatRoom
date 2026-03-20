@@ -8,11 +8,17 @@
         <div class="wrapper border">
             <header>
                 <h1>Chatroom</h1>
-                <%- include("./partials/header.ejs"); %>    
+                <%- include("./partials/header.ejs", {pages: pages}); %>    
             </header>
         
             <main class="border">
-                
+                <% messages.map((message) => { %>
+                    <div class="card border">
+                        <h2 class="username"> <%= message.user %> </h2>
+                        <p class="message"> <%= message.text %> </p>
+                        <p class="date"><%= message.added %> </p>
+                    </div>
+                <% }) %>
             </main>
             <footer>
                 <%- include("./partials/footer", {links: links}) %>
