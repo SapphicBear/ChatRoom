@@ -14,21 +14,6 @@ const messages = [
         user: "Mariana",
         added: new Date(),
     },
-    {
-        text: "gddsjkfgnmsdkjfg kmsdfglksm sdlfkg msldfkmg lskdfmgl ksmfg lkmflg kmdfgl kmdf lgkmfg lkfmg lkdmfg lkdfmg lkdfmlkfklkgm lfkgmlkfgmlkm",
-        user: "fartmaster 4000",
-        added: new Date(),
-    },
-    {
-        text: "gddsjkfgnmsdkjfg kmsdfglksm sdlfkg msldfkmg lskdfmgl ksmfg lkmflg kmdfgl kmdf lgkmfg lkfmg lkdmfg lkdfmg lkdfmlkfklkgm lfkgmlkfgmlkm",
-        user: "fartmaster 4000",
-        added: new Date(),
-    },
-    {
-        text: "Hi there!",
-        user: "Amando",
-        added: new Date(),
-    },
 ];
 
 router.get("/", (req, res) => {

@@ -10,10 +10,26 @@
                 <h1>New Message</h1>
                 <%- include("./partials/header.ejs"); %>
             </header>
-            <main class="border">
-                <form>
-                    
-                </form>
+            <main class="border new">
+                <div class="card border form">
+                    <form>
+                        <div class="formWrapper">
+                        <div class="form-row">
+                            <label for="username">Username:</label>
+                                <input type="text" id="username" name="username">
+                            
+                        </div>
+                        <div class="form-row">
+                            <label for="comment">Comment:</label>
+                                <textarea type="text" id="comment" name="comment" placeholder="Enter your comment..."></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit" class="button border submit">Submit</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                
             </main>
             <footer>
                 <%- include("./partials/footer.ejs", { links: links }); %>
