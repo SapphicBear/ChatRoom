@@ -15,7 +15,9 @@
                 <% messages.map((message) => { %>
                     <div class="card border">
                         <h2 class="username"> <%= message.user %> </h2>
+                        <hr />
                         <p class="message"> <%= message.text %> </p>
+                        <hr />
                         <p class="date"><%= message.added %> </p>
                     </div>
                 <% }) %>
