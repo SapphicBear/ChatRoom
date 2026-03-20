@@ -8,10 +8,6 @@
 }
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --game-board: #aceef7;
-  --text: rgb(85, 69, 233);
-  --background: #7ca8a1;
-  --highlight: #acf7ce;
 }
 *:not(dialog) {
     margin: 0;
@@ -51,12 +47,22 @@ ul, li {
 li {
     list-style: none;
 }
-
+:root {
+    --background: rgb(79, 86, 148);
+    --primary: rgb(235, 121, 184);
+    --secondary: rgb(255, 200, 238);
+    --highlight: rgb(255, 185, 80);
+    --text: rgb(255, 254, 250);
+}
 
 body {
-    background: grey;
+    background: var(--background);
 }
 .wrapper {
     max-width: 960px;
     margin-inline: auto;
+}
+
+.border {
+    border: outset 2px var(--primary);
 }
