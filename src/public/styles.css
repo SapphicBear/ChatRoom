@@ -219,7 +219,7 @@ footer {
 
 @media (max-width: 650px) {
     main.new {
-        max-height: fit-content;
+        min-height: fit-content;
     }
     .form-row {
         flex-direction: row;
@@ -248,7 +248,7 @@ footer {
     }
 }
 
-@media (max-height: 650px) {
+@media (max-height: 500px) {
     .wrapper {
         min-height: 100vh;
     }
