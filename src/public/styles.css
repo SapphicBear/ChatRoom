@@ -135,8 +135,8 @@ main {
 }
 hr {
     border-top: dotted 2px var(--primary);
-    height: 2px;
-    width: 30ch;
+    max-width: 40ch;
+    align-self: stretch;
 }
 .card {
     display: flex;
@@ -147,6 +147,9 @@ hr {
     background: var(--text);
     padding: 1rem;
     color: var(--background);
+}
+.username, .message {
+    word-break: break-all;
 }
 
 .card.border {
