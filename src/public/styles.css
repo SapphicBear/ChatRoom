@@ -54,6 +54,7 @@ li {
     --primary: #ff83a2;
     --secondary: #25c4ca;
     --highlight: #ffbe5c;
+    --highlight-border: #eea63a;
     --text: #fffdf8;
     --shadow: #0e102e73;
 }
@@ -219,7 +220,23 @@ footer {
     transform: translate(-5px, -5px);
     box-shadow: 5px 5px 0 var(--shadow);
 }
+.errors {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    position: absolute;
+    bottom: 0.25rem;
+    place-self: center;
+}
 
+.error {
+    background: var(--highlight);
+    color: var(--background);
+    padding: 0.25rem;
+}
+.error.border {
+    border-color: var(--highlight-border);
+}
 @media (max-width: 650px) {
     main.new {
         min-height: fit-content;

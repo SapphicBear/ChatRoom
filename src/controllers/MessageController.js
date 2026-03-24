@@ -14,7 +14,7 @@ const validateUser = [
         .isAlphanumeric().withMessage(`username: ${errors.alphaNum}`)
         .isLength({ min: 1, max: 20}).withMessage(`username: ${errors.lengthUser}`),
     body("message").trim()
-        .isLength({ min: 1, max: 255 }).withMessage(errors.lengthBody),
+        .isLength({ min: 1, max: 255 }).withMessage(`message body: ${errors.lengthBody}`),
 ];
 
 const usersCreatePost = [
@@ -41,7 +41,6 @@ async function newMessageGet(req, res) {
 
 async function messagesGet(req, res) {
     const messages = await db.getAllMessages();
-    console.log(messages);
     res.render("index", { links: links, pages: "Home", messages: messages })
 }
 
