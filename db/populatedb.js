@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS messages (
 
 INSERT INTO messages (username, message, date)
 VALUES
-('Tay', 'Hope everyone is doing good!', ${Date.now()});
+('Tay', 'Hope everyone is doing good!', '${new Date()}');
 `;
 
 async function main(arg) {

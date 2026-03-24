@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/app.js",
+    "production": "dotenv run -f .env.prod npm run _production",
+    "_production": "node ./db/populatedb.js $DATABASE_URL",
     "database": "dotenv -- npm run _database",
-    "_database": "node ./db/populatedb.js $PRIVATE_CONNECTION_STRING"
+    "_database": "node ./db/populatedb.js $DATABASE_URL"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
     "dotenv": "^17.3.1",
     "ejs": "^5.0.1",
     "express": "^5.2.1",
+    "express-validator": "^7.3.1",
     "pg": "^8.20.0"
   }
 }
