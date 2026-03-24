@@ -1,7 +1,7 @@
 {
-  "name": "chatroom",
-  "version": "1.0.0",
-  "description": "Simple Chat Room application made using Express and Node js. Part of the Odin Project's Node course.",
+  "name": "MessageBoard",
+  "version": "1.2.0",
+  "description": "Simple message board application made using Express and Node js. Part of the Odin Project's Node course.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,16 +13,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SapphicBear/ChatRoom.git"
+    "url": "git+https://github.com/SapphicBear/MessageBoard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/SapphicBear/ChatRoom/issues"
+    "url": "https://github.com/SapphicBear/MessageBoard/issues"
   },
-  "homepage": "https://github.com/SapphicBear/ChatRoom#readme",
+  "homepage": "https://github.com/SapphicBear/MessageBoard#readme",
   "dependencies": {
     "@dotenvx/dotenvx": "^1.57.2",
     "dotenv": "^17.3.1",
