@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 const { argv } = require("node:process");
 const { Client } = require("pg");
+const { format } = require("date-fns");
 
 const SQL = `
 CREATE TABLE IF NOT EXISTS messages (
@@ -12,7 +13,7 @@ CREATE TABLE IF NOT EXISTS messages (
 
 INSERT INTO messages (username, message, date)
 VALUES
-('Tay', 'Hope everyone is doing good!', '${new Date()}');
+('Tay', 'Hope everyone is doing good!', '${format(Date.now(), "HH:mm - PPP")}');
 `;
 
 async function main(arg) {
