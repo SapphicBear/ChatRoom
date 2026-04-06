@@ -12,17 +12,18 @@
             </header>
             <main class="border new">
                     <%- include("./partials/error.ejs"); %>
+                
                 <div class="card border form">
                     <form method="POST" action="/new">
                         <div class="formWrapper">
                         <div class="form-row">
                             <label for="username">Username:</label>
-                                <input type="text" id="username" name="username">
+                                <input type="text" id="username" name="username" value="<%= username ? username : ""%>">
                             
                         </div>
                         <div class="form-row">
-                            <label for="message">Message:</label>
-                                <textarea type="text" id="message" name="message" placeholder="Enter your message..."></textarea>
+                            <label for="message">Message: </label>
+                                <textarea type="text" id="message" name="message" placeholder="Enter your message..."><%= message ? message : ""%></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit" class="button border submit">Submit</button>

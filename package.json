@@ -9,7 +9,8 @@
     "production": "dotenv run -f .env.prod npm run _production",
     "_production": "node ./db/populatedb.js $DATABASE_URL",
     "database": "dotenv -- npm run _database",
-    "_database": "node ./db/populatedb.js $DATABASE_URL"
+    "_database": "node ./db/populatedb.js $DATABASE_URL",
+    "dev": "nodemon ./src/app.js"
   },
   "repository": {
     "type": "git",
