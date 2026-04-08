@@ -17,7 +17,7 @@ app.use("/new", newRouter);
 
 
 app.use((req, res, next) => {
-    res.status(404).send("<p>404 page not found! Sorry!</p>");
+    res.status(404).send("<p>404 page not found! Sorry!</p><a href='/'>Return</a>");
 })
 app.use((err, req, res, next) => {
     console.error(err);
