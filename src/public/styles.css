@@ -268,12 +268,11 @@ footer {
     }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 700px) {
     .wrapper {
         min-height: 100vh;
     }
     main.new {
-        min-height: 100vh;
         max-height: fit-content;
     }
 }
