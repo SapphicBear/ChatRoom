@@ -32,7 +32,7 @@ const usersCreatePost = [
             });
         }
         
-        await db.addNewMessage(username, message);
+        await db.Message.addMessage(username, message);
         console.log("Added to database");
         res.redirect("/");
     }
@@ -43,7 +43,7 @@ async function newMessageGet(req, res) {
 }
 
 async function messagesGet(req, res) {
-    const messages = await db.getAllMessages();
+    const messages = await db.Message.getAllMessages();
     res.render("index", { links: links, pages: "Home", messages: messages })
 }
 
